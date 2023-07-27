@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 
@@ -18,13 +19,13 @@ const CardPage = () => {
              </Typography>
              <Typography variant="body2">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, tempore accusantium.
-                
              </Typography>
          </CardContent>
            <CardActions>
-            <Button >Share</Button>
+            
+            <Button color="primary" variant="outlined" >Add to Cart</Button>
+            <Button  color="primary" variant="outlined" >Share</Button>
            </CardActions>
-
            
        </Card>
        </div>
