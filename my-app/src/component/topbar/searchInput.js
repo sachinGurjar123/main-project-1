@@ -1,6 +1,6 @@
 import React from "react";
 import { InputBase, IconButton, Paper } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
+// import SearchIcon from "@mui/icons-material/Search";
 
 const SimpleSearchBar = () => {
   return (
@@ -16,7 +16,7 @@ const SimpleSearchBar = () => {
       }}
     >
       <IconButton sx={{ p: "10px" }} aria-label="search">
-        <SearchIcon />
+        {/* <SearchIcon /> */}
       </IconButton>
       <InputBase
         sx={{ ml: 1, flex: 1 }}
