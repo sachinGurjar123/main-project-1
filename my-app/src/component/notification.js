@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import { onMessageListener, requestForToken } from "../firbase/firebase";
+import { onMessageListener, requestForToken } from "./firebase";
 
 const Notification = () => {
   const [notification, setNotification] = useState({ title: "", body: "" });

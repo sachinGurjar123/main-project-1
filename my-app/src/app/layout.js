@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Notification from "./notification/notification";
+import Notification from "../component/notification";
 
 const inter = Inter({ subsets: ["latin"] });
 
