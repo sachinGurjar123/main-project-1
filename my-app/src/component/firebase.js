@@ -1,5 +1,7 @@
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
 import { initializeApp } from "firebase/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
 
 // Replace this firebaseConfig object with the congurations for the project you created on your firebase console.
 const firebaseConfig = {
@@ -17,7 +19,7 @@ const messaging = getMessaging();
 export const requestForToken = () => {
   return getToken(messaging, {
     vapidKey:
-      " BHm7GJg7uevM0ZzsPQO0anMR82dznOsd8btGnpjqZ26v9kjdGofOcDZB_HDTd76TFM -tIUfDSP09awBrTmtMjvc",
+      "BBqJIE0R1QDODOQ8ZicKYM7FABoK8xhZz6aYvTYmtx3hifL1bDF0tNj1ymtozdmIMnUjl2o2lYnDtF_b4M7Rl70",
   })
     .then((currentToken) => {
       if (currentToken) {
